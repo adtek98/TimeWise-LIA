@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="CSS/fontawesome-free-5.11.2-web/css/all.css" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/site.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+   <div class="col-2 flex-column align-content center text-center">
+      <a
+        type="button"
+        class="btn menuitem"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        <i class="far fa-flag fa-2x mt-2"></i>
+      </a> 
+      <p class="menuitemtext">Hantera Konflikt</p>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content confModBg">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Konflikt hantering
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row conflictCard">
+              <div class="col-12 col-lg-5 d-flex align-items-start flex-column">
+                <div class="row mb-auto">
+                  <div class="container-fluid">
+                    <div class="row align-self-left text-left">
+                      <h5>Produktion-A</h5>
+                    </div>
+                    <div class="row">
+                      <div class="col mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-calendar"></i>
+                          <p>Edit Date</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="2022-07-03"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-clock"></i>
+                          <p>Start time</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="00:00"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-clock"></i>
+                          <p>End time</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="00:30"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-walking"></i>
+                          <p>Activity</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="Text"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-door-open"></i>
+                          <p>Venue</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="Text"
+                          />
+                        </div>
+                      </div>
+              
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-compass"></i>
+                          <p>Status</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+              </div>
+                <div class="row p-2">
+                  <ul class="buttonList">
+                    <li>
+                      <ul class="hoverButtons">
+                        <li>
+                          <i class="fas fa-save icon_mirror"></i>
+                          <span>Save</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="hoverButtons">
+                        <li>
+                          <i class="fas fa-trash-alt"></i>
+                          <span>Delete</span>
+                        </li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2 d-flex justify-content-center">
+                <ul class="conflictList align-self-center">
+                  <li><i class="far fa-flag fa-3x conflictFlag"></i></li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      class="acceptConflict"
+                      name="acceptConflict"
+                      value="accept"
+                    />
+                    <label class="menuitemtext" for="acceptConflict">
+                      Acceptera konflikt</label
+                    >
+                  </li>
+                  <li>
+                    <ul class="buttonList">
+                      <li>
+                        <ul class="hoverButtons">
+                          <li>
+                            <i class="fas fa-save icon_mirror"></i>
+                            <span>Save</span>
+                          </li>
+                        </ul>
+                      </li>                     
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-5 d-flex align-items-start flex-column">
+                <div class="mb-auto row">
+                  <div class="container-fluid" >
+                    <div class="row align-self-left text-left">
+                      <h5>Produktion-B</h5>
+                    </div>
+                    <div class="row">
+                      <div class="col mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-calendar"></i>
+                          <p>Edit Date</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="2022-07-03"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-clock"></i>
+                          <p>Start time</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="00:00"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fa fa-clock"></i>
+                          <p>End time</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="00:30"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-walking"></i>
+                          <p>Activity</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="Text"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-door-open"></i>
+                          <p>Venue</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value="Text"
+                          />
+                        </div>
+                      </div>
+              
+                      <div class="col-4 mp-0 menu-button-holder align-self-start">
+                        <div
+                          id="btnStartDateIcon"
+                          class="btn btn-light greyBoxBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-compass"></i>
+                          <p>Status</p>
+                          <input
+                            id="tbStartDate"
+                            type="text"
+                            class="form-control inputtext"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+                <div class="row align-self-lg-end">
+                  <ul class="buttonList">
+                    <li>
+                      <ul class="hoverButtons">
+                        <li>
+                          <i class="fas fa-save icon_mirror"></i>
+                          <span>Save</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="hoverButtons">
+                        <li>
+                          <i class="fas fa-trash-alt"></i>
+                          <span>Delete</span>
+                        </li>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- Sparar alla ändringar knapp
+            <div class="col-2 flex-column align-content center text-center">
+              <a
+                type="button"
+                class="btn menuitem"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
+                <i class="fas fa-save icon_mirror fa-2x mt-2"></i>
+
+              </a> 
+              <p class="menuitemtext">Save</p>
+            </div>
+            -->
+        </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <!--Ändra lite färg-->
+
+    <!-- For additional Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".acceptConflict").on('change', function() {
+          if ($(".acceptConflict").is(':checked')){
+              $(".conflictFlag").css("color", "green");
+              $(".conflictCard").css("border-color", "green"); 
+          }
+          else {
+              $(".conflictFlag").css("color", "red");
+              $(".conflictCard").css("border-color", "red");
+          }
+          });
+  </script>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,235 @@
+/* TEXT */
+body {
+  background-color: rgb(242, 242, 242);
+}
+p,
+td,
+a,
+label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.small {
+  font-family: "Roboto", sans-serif;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.smallxs {
+  font-family: "Roboto", sans-serif;
+  font-size: 70%;
+  font-weight: 400;
+}
+
+.smallxxs {
+  font-size: 8px;
+  margin-top: 1px;
+}
+
+/* BOX och KNAPPAR */
+
+.menugroup {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 9px;
+}
+.menugroupcaption {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.menuitem {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  transition: 0.5s;
+}
+
+.menuitem:hover{
+  background-color: rgb(185, 190, 199);
+  transition: 0.2s ease-in-out;
+}
+.menuitemicon {
+  font-size: 20px;
+  margin-top: 3px;
+}
+.menuitemtext {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+/* light-theme */
+.menugroup {
+  background-color: rgb(255, 255, 255);
+  border-radius: 9px;
+}
+.menuitem {
+  background-color: rgb(242, 242, 242); /*light-grey*/
+}
+
+/*
+iconColors for alla themes*/
+.ared {
+  color: rgb(165, 38, 44); /*red*/
+}
+
+.aredBackground {
+  background: rgb(165, 38, 44); /*red*/
+}
+
+.aredXS {
+  color: rgb(165, 38, 44); /*red*/
+  font-size: 14px;
+}
+
+.aredXL {
+  color: rgb(165, 38, 44); /*red*/
+  font-size: 24px;
+}
+.aorange {
+  color: #ca5010; /*orange*/
+}
+.aorangeBackground {
+  background: #ca5010; /*orange*/
+}
+
+.agreenXL {
+  color: #407855; /*green*/
+  font-size: 24px;
+}
+
+.agreen {
+  color: #407855; /*green*/
+}
+
+.agreenBackground {
+  background: #407855; /*green*/
+}
+
+.agreenXS {
+  color: #407855; /*green*/
+  font-size: 14px;
+}
+
+.abrightblueXL {
+  color: #0078d4; /*bright blue*/
+  font-size: 24px;
+}
+
+.abrightblue {
+  color: #0078d4; /*bright blue*/
+}
+
+.abrightblueBackground {
+  background: #0078d4; /*bright blue*/
+}
+
+.amiddleblue {
+  color: #4052ab; /*middle blue*/
+}
+
+.amiddleblueBackground {
+  background: #4052ab; /*middle blue*/
+}
+.amiddleblueXS {
+  color: #4052ab; /*middle blue*/
+  font-size: 14px;
+}
+.adarkblue {
+  color: rgb(29, 53, 87); /*dark blue*/
+}
+.adarkbluebackground {
+  background: rgb(29, 53, 87); /*dark blue*/
+}
+.agold {
+  color: #9c8321; /*gold*/
+}
+
+.agoldBackground {
+  background: #9c8321; /*gold*/
+}
+
+.agoldXS {
+  color: #9c8321; /*gold*/
+  font-size: 14px;
+}
+
+.agoldXL {
+  color: #9c8321; /*gold*/
+  font-size: 24px;
+}
+
+.agrey {
+  border-color: rgb(185, 190, 199); /* Hovergrey */
+  color: rgb(185, 190, 199); /* Hovergrey */
+}
+
+.ateal {
+  color: #038387;
+}
+
+.atealBackground {
+  background: #038387;
+}
+
+.apurple {
+  color: rgb(133, 64, 133); /*purple*/
+}
+
+.apurpleBackground {
+  background: rgb(133, 64, 133); /*purple*/
+}
+
+/*lab*/
+
+
+
+/* */
+.headertext {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  
+}
+.menuitemMd {
+  width: 60px;
+  height: 60px;
+}
+
+.menuitemSm {
+  width: 41px;
+  height: 41px;
+}
+
+.menusubgroup {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 9px;
+  background-color: rgb(242, 242, 242);
+}
+
+/*
+.doubleBooking > input {
+  transform: scale(2);
+  margin: 0 0.5em;
+}
+*/
+/*  Lite kul */
+:root {
+  --conflictColor: rgb(165, 26, 26);
+  --acceptConflict: rgb(44, 136, 52);
+  --bg-grey: rgb(242, 242, 242); /* BackgroundGrey */
+  --bg-hooverGrey: rgb(185, 190, 199); /* Hovergrey */
+}
+
+.mp-0 {
+  margin: 0;
+  padding: 0;
+}
+
