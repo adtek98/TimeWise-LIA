@@ -185,6 +185,7 @@ iconColors for alla themes*/
   background: rgb(133, 64, 133); /*purple*/
 }
 
+
 /*lab*/
 
 
@@ -198,8 +199,8 @@ iconColors for alla themes*/
   
 }
 .menuitemMd {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
 }
 
 .menuitemSm {
@@ -212,8 +213,12 @@ iconColors for alla themes*/
   padding: 20px;
   border-radius: 9px;
   background-color: rgb(242, 242, 242);
+  flex: 100%;
 }
 
+.awhiteBackground {
+  background-color: rgb(255, 255, 255);
+}
 /*
 .doubleBooking > input {
   transform: scale(2);
