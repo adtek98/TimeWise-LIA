@@ -24,53 +24,89 @@
           </button>
           
           <!-- Modal -->
-          <div class="modal fade" id="staticSettingsBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
+          <!--<div class="modal fade" id="staticSettingsBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">-->
+            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header justify-content-center">
                   <h5 class="modal-title" id="staticBackdropLabel">Lokal inställningar</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                    <div class="">
-                        <label for="resourceVisisbleFor">Vem får se lokalen och dess bokningar?</label><br>
-                        <select name="resourceVisisbleFor" id="resourceVisisbleFor">
+                <div class="modal-body text-left">
+                  <form>
+                    <div>
+                      <p>Behörigheter</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="resourceVisisbleFor">Vem får se lokalen och dess bokningar?</label>
+                        <select class="form-control" name="resourceVisisbleFor" id="resourceVisisbleFor">
                             <option disabled selected>-- Select --</option>
                             <option value="">Random</option>
                         </select>
                     </div>
-
-                    <div class="mt-4">
-                        <label for="allowBooking">Vem får boka i lokalen?</label><br>
-                        <select name="allowBooking" id="allowBooking">
+                    <div class="form-group">
+                        <label for="allowBooking">Vem får boka i lokalen?</label>
+                        <select class="form-control" name="allowBooking" id="allowBooking">
                             <option disabled selected>-- Select --</option>
                             <option value="">Random</option>
                         </select>
                     </div>
-
-                    <div class="mt-4 doubleBooking">
-                        <input type="checkbox">
-                        <label for="doubleBooking">Tillåta dubbelbokning?</label>    
+                    <div class="mt-5">
+                      <p>Dubbelbokning</p>
                     </div>
-
-                    <div class="mt-4">
-                        <label for="allowBooking">Nej vid följande aktivitet:</label><br>
-                        <select name="allowBooking" id="allowBooking">
-                            <option disabled selected>-- Aktivitetstagg --</option>
-                            <option value="">Random</option>
-                            <option value="">Random</option>
-                        </select>
-                        <select name="allowBooking" id="allowBooking">
-                            <option disabled selected>-- Aktivitet --</option>
-                            <option value="">Random</option>
-                            <option value="">Random</option>
-                        </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="doubleBooking">
+                      <label class="form-check-label" for="doubleBooking">Tillåta dubbelbokning?</label>    
                     </div>
-
-
-
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allowspecificBooking">
+                        <label class="form-check-label" for="allowspecificBooking">Ja, tillåt dubbelbokning utom vid följande aktiviteter:</label>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" name="allowBooking" >
+                        <option disabled selected>-- Aktivitetstagg --</option>
+                        <option value="">Random</option>
+                        <option value="">Random</option>
+                      </select>
+                      <select class="form-control" name="allowBooking" >
+                          <option disabled selected>-- Aktivitet --</option>
+                          <option value="">Random</option>
+                          <option value="">Random</option>
+                      </select>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="allowspecificBooking">
+                      <label class="form-check-label" for="allowspecificBooking">Nej, tillåt aldrig dubbelboknigar.</label>
+                  </div>
+                  <div class="mt-5">
+                    <p>Regler för underliggande lokaler</p>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="doubleBooking">
+                    <label class="form-check-label" for="doubleBooking">Tillåta dubbelbokning?</label>    
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="allowspecificBooking">
+                      <label class="form-check-label" for="allowspecificBooking">Ja, tillåt dubbelbokning utom vid följande aktiviteter:</label>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" name="allowBooking" >
+                      <option disabled selected>-- Aktivitetstagg --</option>
+                      <option value="">Random</option>
+                      <option value="">Random</option>
+                    </select>
+                    <select class="form-control" name="allowBooking" >
+                        <option disabled selected>-- Aktivitet --</option>
+                        <option value="">Random</option>
+                        <option value="">Random</option>
+                    </select>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="allowspecificBooking">
+                    <label class="form-check-label" for="allowspecificBooking">Nej, tillåt aldrig dubbelboknigar.</label>
+                </div>
+                  </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -78,7 +114,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          <!--</div>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
