@@ -213,7 +213,7 @@ iconColors for alla themes*/
   padding: 20px;
   border-radius: 9px;
   background-color: rgb(242, 242, 242);
-  flex: 100%;
+  flex: 100%; /* col-12 blev konstig?*/
 }
 
 .awhiteBackground {
