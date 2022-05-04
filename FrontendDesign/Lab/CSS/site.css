@@ -221,6 +221,14 @@ iconColors for alla themes*/
 .awhiteBackground {
   background-color: rgb(255, 255, 255);
 }
+
+/* draggable css */
+
+.draggable {
+  cursor: move;
+}
+
+
 /*
 .doubleBooking > input {
   transform: scale(2);
