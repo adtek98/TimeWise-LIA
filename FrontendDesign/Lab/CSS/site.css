@@ -188,7 +188,9 @@ iconColors for alla themes*/
 
 /*lab*/
 
-
+.awhite {
+  color: rgb(255, 255, 255);
+}
 
 /* */
 .headertext {
