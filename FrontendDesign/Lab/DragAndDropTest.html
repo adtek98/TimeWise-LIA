@@ -15,7 +15,7 @@
         crossorigin="anonymous"
         />
         <link rel="stylesheet" href="CSS/site.css" />
-        <script src="Scripts/script.js"></script>
+        
         <title>Document</title>
     </head>
     <body class="unfloat">
@@ -70,106 +70,30 @@
                         <p class="menugroupcaption">Scener</p>
                       </div>
                       <div class="row">
-                        <div id="iconcontainer1" class="col flex-column awhiteBackground m-1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <a id="icon1" href="#" title=""  class="btn menuitem" draggable="true" ondragstart="drag(event)"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i><p class="menuitemtext mt-4">lokal</p></a>    
+                        <div class="col-4 flex-column awhiteBackground">
+                          <div class="draggable" draggable="true">
+                            <a href="#" title=""  class="btn menuitem"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i></a>    
+                            <p class="menuitemtext ">lokal</p>
+                          </div>
+                          <div class="container d-flex justify-content-around">
+                            <!-- row for childrens-->
+
+                          </div>
                         </div>
-                        <div id="iconcontainer2" class="col flex-column awhiteBackground m-1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <a id="icon2" href="#" title=""  class="btn menuitem" draggable="true" ondragstart="drag(event)"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i><p class="menuitemtext mt-4">lokal</p></a>    
+                        <div class="col-4 flex-column awhiteBackground">
+                          <div class="draggable" draggable="true">
+                            <a href="#" title=""  class="btn menuitem"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i></a>    
+                            <p class="menuitemtext ">lokal</p>
+                          </div>  
+                          <div class="container d-flex justify-content-around">
+                            <!-- row for childrens-->
+                          </div>                     
                         </div>
-                        <div id="iconcontainer3" class="col flex-column awhiteBackground m-1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <a id="icon3" href="#" title=""  class="btn menuitem" draggable="true" ondragstart="drag(event)"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i><p class="menuitemtext mt-4">lokal</p></a>
-                            <a id="icon4" href="#" title=""  class="btn menuitem" draggable="true" ondragstart="drag(event)"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i><p class="menuitemtext mt-4">lokal</p></a>
-                            <a id="icon5" href="#" title=""  class="btn menuitem" draggable="true" ondragstart="drag(event)"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i><p class="menuitemtext mt-4">lokal</p></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="menusubgroup col">
-                      <!-- Subgroup -->
-                      <div class="col-12">
-                        <p class="menugroupcaption">typtagg</p>
-                      </div>
-                    </div>
-                    <div class="menusubgroup col">
-                      <!-- Subgroup -->
-                      <div class="col-12">
-                        <p class="menugroupcaption">typtagg</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div> 
-            </div>
-            <div class="col-12 col-xl-8 offset-xl-2 align-content-center text-center">
-              <div class="row">
-                <div class="col menugroup">
-                  <div class="row mb-4">
-                    <div class="col-xl-3 col-2"></div>
-                    <div class="col-xl-6 col-8">
-                      <p class="menugroupcaption">Platstagg</p>
-                    </div>
-                    <div class="col-xl-3 col-12">
-                      <a href="#" class="btn menuitem menuitemSm m-1"><i class="fas fa-plus amiddleblue"></i></a>
-                      <a href="#" class="btn menuitem menuitemSm m-1" data-toggle="modal" data-target="#staticSettingsBackdrop"><i class="fas fa-cog apurple"></i></a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-4 col-lg-3 flex-column">
-                      <a href="#" title=""  class="btn menuitem draggable"><i class="fas fa-door-open mt-3" style="" data-fa-transform=""></i></a>
-                      <p class="menuitemtext">lokal</p>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-        </div>
-        <!--Inställningsmodal för lokaler-->
-        <div class="modal fade" id="staticSettingsBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Lokal inställningar</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <div class="">
-                        <label for="resourceVisisbleFor">Vem får se lokalen och dess bokningar?</label><br>
-                        <select name="resourceVisisbleFor" id="resourceVisisbleFor">
-                            <option disabled selected>-- Select --</option>
-                            <option value="">Random</option>
-                        </select>
-                    </div>
-                    <div class="mt-4">
-                        <label for="allowBooking">Vem får boka i lokalen?</label><br>
-                        <select name="allowBooking" id="allowBooking">
-                            <option disabled selected>-- Select --</option>
-                            <option value="">Random</option>
-                        </select>
-                    </div>
-                    <div class="mt-4 doubleBooking">
-                        <input type="checkbox">
-                        <label for="doubleBooking">Ska lokalen tillåta dubbelbokning?</label>    
-                    </div>
-                    <div class="mt-4">
-                        <label for="allowBooking">Lokalen ska inte gå att boka vid följande aktivitet:</label><br>
-                        <select name="allowBooking" id="allowBooking">
-                            <option disabled selected>-- Aktivitetstagg --</option>
-                            <option value="">Random</option>
-                            <option value="">Random</option>
-                        </select>
-                        <select name="allowBooking" id="allowBooking">
-                            <option disabled selected>-- Aktivitet --</option>
-                            <option value="">Random</option>
-                            <option value="">Random</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save</button>
-                </div>
-              </div>
             </div>
         </div>
       </div>
@@ -181,6 +105,6 @@
           $('[data-toggle="popover"]').popover()
           })
       </script>
-
+      <script src="Scripts/script.js"></script>
     </body>
 </html>

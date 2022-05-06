@@ -206,8 +206,9 @@ iconColors for alla themes*/
 }
 
 .menuitemSm {
-  width: 41px;
-  height: 41px;
+  width: 42px;
+  height: 42px;
+  margin-top: 0;
 }
 
 .menusubgroup {
@@ -236,15 +237,16 @@ iconColors for alla themes*/
 }
 */
 /*  Lite kul */
-:root {
-  --conflictColor: rgb(165, 26, 26);
-  --acceptConflict: rgb(44, 136, 52);
-  --bg-grey: rgb(242, 242, 242); /* BackgroundGrey */
-  --bg-hooverGrey: rgb(185, 190, 199); /* Hovergrey */
-}
 
-.mp-0 {
-  margin: 0;
-  padding: 0;
+.container {
+  min-width: 100%;
+  min-height: 1px;
+}
+.undraggable { 
+  -webkit-user-select: none; /* Safari 3.1+ */ 
+  -moz-user-select: none; /* Firefox 2+ */ 
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */  
+  -webkit-user-drag: none; 
 }
 
