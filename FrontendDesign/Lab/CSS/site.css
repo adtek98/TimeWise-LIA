@@ -208,7 +208,7 @@ iconColors for alla themes*/
 .menuitemSm {
   width: 42px;
   height: 42px;
-  margin-top: 0;
+  
 }
 
 .menusubgroup {
@@ -239,10 +239,14 @@ iconColors for alla themes*/
 /*  Lite kul */
 
 .container {
-  min-width: 100%;
-  min-height: 1px;
+  min-height: 40px;
 }
-.undraggable { 
+
+.childcontainer {
+  min-height: 40px;
+}
+
+.undraggable > a, p { 
   -webkit-user-select: none; /* Safari 3.1+ */ 
   -moz-user-select: none; /* Firefox 2+ */ 
   -ms-user-select: none; /* IE 10+ */
@@ -250,3 +254,8 @@ iconColors for alla themes*/
   -webkit-user-drag: none; 
 }
 
+.maincontainer {
+  background-color: rgb(255, 255, 255);
+  border-radius: 9px;
+  border: 5px solid rgb(242, 242, 242);
+}
