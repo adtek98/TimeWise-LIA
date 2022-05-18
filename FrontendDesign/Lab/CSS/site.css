@@ -237,13 +237,33 @@ iconColors for alla themes*/
 }
 */
 /*  Lite kul */
-
-.container {
-  min-height: 40px;
+.childcontainer  {
+  min-height: 15px;
 }
 
-.childcontainer {
-  min-height: 40px;
+.childcontainer > * {
+  transform: scale(0.5);
+}
+
+.childcontainer > .item {
+  margin: 0 0;
+  max-height: 70px;
+}
+
+.item {
+  margin: 0 1rem;
+
+}
+
+.item > p {
+  margin-bottom: 0;
+}
+
+.parent {
+ background-color: rgb(243, 243, 243);
+ border-radius: 9px;
+ padding:  5px;
+ box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
 }
 
 .undraggable > a, p { 
@@ -259,3 +279,10 @@ iconColors for alla themes*/
   border-radius: 9px;
   border: 5px solid rgb(242, 242, 242);
 }
+
+.invisible{
+  display: none;
+}
+
+
+
